@@ -1,0 +1,57 @@
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+
+Bundle 'The-NERD-tree'
+
+set fileencodings=ucs-bom,utf-8,cp936,big5,euc-jp.euc-kr,gb18030,latin1
+
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set smarttab
+
+filetype plugin on
+filetype indent on
+
+set ruler
+
+set cmdheight=2
+
+set backspace=eol,start,indent
+set whichwrap+=<,>,h,l
+
+set ignorecase
+set smartcase
+set hlsearch
+set incsearch
+set lazyredraw
+set magic
+set showmatch
+set number
+
+set nobackup
+set nowb
+set noswapfile
+
+if $TERM =~ '^xterm'
+	set t_Co=256
+elseif $TERM =~ '^linux'
+	set t_Co=8
+else
+	set t_Co=16
+endif
+
+set autoindent
+set smartindent
+
+syntax on
+colorscheme torte
+
+set background=dark
+
+set laststatus=2
