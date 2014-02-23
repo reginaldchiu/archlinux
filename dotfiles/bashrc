@@ -1,0 +1,12 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+export PATH=$PATH:/opt/android-sdk/tools/:/opt/android-sdk/platform-tools:/opt/android-sdk/build-tools
+
+alias halt='sudo halt'
+alias poweroff='sudo poweroff'
+alias reboot='sudo reboot'
